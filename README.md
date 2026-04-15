@@ -2,6 +2,10 @@
 
 Предсказание категории товара по текстовым полям (name, description, model, type_prefix, vendor), URL и изображению.
 
+## Презентация
+
+https://docs.google.com/presentation/d/1nvvk9mz0fQfhko3Db5uCechQp1TDPJ1TzND_om7eEnc/edit?usp=sharing
+
 ## Структура проекта
 
 ```
