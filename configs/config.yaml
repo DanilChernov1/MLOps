@@ -1,0 +1,24 @@
+data:
+  train_path: "train.parquet.snappy"
+  test_path: "test.parquet.snappy"
+  tree_path: "tree.csv"
+
+features:
+  text_columns: ["name", "description", "model", "type_prefix", "vendor"]
+  max_features: 100000
+  ngram_range: [1, 2]
+  min_df: 2
+  sublinear_tf: true
+
+model:
+  type: "logistic_regression"
+  C: 10.0
+  max_iter: 1000
+  solver: "saga"
+  random_state: 42
+
+training:
+  test_size: 0.2
+  random_state: 42
+  mlflow_experiment: "product_categorization"
+  mlflow_run_name: "tfidf_logreg_baseline"
